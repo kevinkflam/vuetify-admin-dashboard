@@ -18,7 +18,7 @@
           <v-icon>mdi-view-list</v-icon>
         </v-btn>
         <v-row align="centre">
-          DECEMBER THE 18th 2030 ~~~ HAPPY HOLIDAYS!!!
+          December the 18th 2030 ~~~ HAPPY HOLIDAYS!!!
         </v-row>
       </v-toolbar-title>
     </div>

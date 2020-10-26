@@ -60,7 +60,7 @@ export default {
         text: "What's New?",
       },
       {
-        to: '/food',
+        to: '/dashboard/food',
         icon: 'mdi-food',
         text: 'Food',
       },

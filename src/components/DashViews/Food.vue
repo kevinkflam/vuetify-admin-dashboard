@@ -96,13 +96,11 @@
           title="25 New Trees Planted!"
           text="Loving the new greenery!"
         >
-          With the addition of the 25 new trees just this past week, UBC has
-          managed to plant over 5000 trees this whole year! The Pacific Spirit
-          Park has redeveloped and grow into its luscious green space once
-          again! We all remember that deadly fire at the end of 2020! Even the
-          firefighters' water pumps and hoses froze up with the record-breaking
-          frigid temperatures. Oh wow, 2020, such a long time ago... what an
-          unforgettable year indeed.
+          Students and Faculty members certainly have taken a more conscious
+          approach to their waste, with a record-breaking low of only 2000lbs of
+          garbage for the whole UBC, and 3000lbs of food waste, much which has
+          gone to compost or turned to energy through the newly constructed
+          biofuel production facility on campus.
         </material-card>
       </v-flex>
       <v-flex lg4>
