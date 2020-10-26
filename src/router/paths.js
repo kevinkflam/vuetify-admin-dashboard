@@ -43,58 +43,27 @@ export default [
     component: () => import(`@/views/DashboardView.vue`),
     children: [
       {
-        path: '',
-        name: 'Dashboard',
-        component: () => import(`@/components/DashViews/Dashboard.vue`),
+        path: '/',
+        name: 'Food',
+        component: () => import(`@/components/DashViews/Food.vue`),
       },
       {
-        path: 'user-profile',
+        path: 'environment',
         meta: {
-          name: 'User Profile',
+          name: 'Environment',
           requiresAuth: true,
         },
-        component: () => import(`@/components/DashViews/UserProfile.vue`),
+        component: () => import(`@/components/DashViews/Environment.vue`),
       },
       {
-        path: 'table-list',
+        path: 'people',
         meta: {
-          name: 'Table List',
+          name: 'People',
           requiresAuth: true,
         },
-        component: () => import(`@/components/DashViews/SimpleTables.vue`),
+        component: () => import(`@/components/DashViews/People.vue`),
       },
-      {
-        path: 'user-tables',
-        meta: {
-          name: 'User Table',
-          requiresAuth: true,
-        },
-        component: () => import(`@/components/DashViews/UsersTable.vue`),
-      },
-      {
-        path: 'tablestest',
-        meta: {
-          name: 'Complex Tables test',
-          requiresAuth: true,
-        },
-        component: () => import(`@/components/DashViews/TableList.vue`),
-      },
-      {
-        path: 'typography',
-        meta: {
-          name: 'Typography',
-          requiresAuth: true,
-        },
-        component: () => import(`@/components/DashViews/Typography.vue`),
-      },
-      {
-        path: 'icons',
-        meta: {
-          name: 'Icons',
-          requiresAuth: true,
-        },
-        component: () => import(`@/components/DashViews/Icons.vue`),
-      },
+
       {
         path: 'maps',
         meta: {
