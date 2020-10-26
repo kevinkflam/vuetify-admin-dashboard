@@ -56,15 +56,6 @@ export default [
         component: () => import(`@/components/DashViews/Environment.vue`),
       },
       {
-        path: 'people',
-        meta: {
-          name: 'People',
-          requiresAuth: true,
-        },
-        component: () => import(`@/components/DashViews/People.vue`),
-      },
-
-      {
         path: 'maps',
         meta: {
           name: 'Maps',

@@ -8,24 +8,49 @@
           color="warning"
           type="Line"
         >
-          <h4 class="title font-weight-light">Daily StackOverflow Visits</h4>
+          <h4 class="title font-weight-light">Cricket ice cream sales</h4>
           <p class="category d-inline-flex font-weight-light">
             <v-icon color="green" small>
               mdi-arrow-up
             </v-icon>
-            <span class="green--text">55%</span>&nbsp; increase in today's
+            <span class="green--text">23%</span>&nbsp; increase in today's
             visits
           </p>
-
-          <template slot="actions">
-            <v-icon class="mr-2" small>
-              mdi-clock-outline
-            </v-icon>
-            <span class="caption grey-lighten-1--text font-weight-light"
-              >updated 4 minutes ago</span
-            >
-          </template>
         </material-chart-card>
+      </v-flex>
+      <v-flex lg8>
+        <material-card
+          color="info"
+          title="The new insect menu is booming!"
+          text="Crickets are the best protein"
+        >
+          5 years ago, when insects such as crickets, grasshoppers, and other
+          grubs were added to some shops' menus in the Nest, most students were
+          disgusted and laughed at how silly this change was. However, once the
+          Blue Chip cookies started incorporating Cricket Cookies, sales started
+          rising and more students began trying the new source of protein.
+          <br />
+          This week, the UBC chapter of Rain or Shine incorporated their new
+          Cricket and Cream flavour, sales have boosted up by 23% this week
+          compared to last week! Things are certainly looking up to using new
+          sources of proteins as a community and relying less on the
+          high-impacts of other protein sources such as cows and pork.
+        </material-card>
+      </v-flex>
+      <v-flex lg8>
+        <material-card
+          color="info"
+          title="UBC Farm yearly summary"
+          text="Yummy yummy in my tummy"
+        >
+          As a summary to this year's crops yield, the UBC farm has been able to
+          obtain a record amount, able to independently supply first-year meals
+          during the whole summer! This was the first time this has ever
+          happened, and it may be due to the recent expansion of the UBC farm,
+          as well as the increase in student involvement in caretaking. Students
+          have cared for the new farm and their efforts have shone through the
+          quantity and quality of the food produced.
+        </material-card>
       </v-flex>
       <v-flex md12 sm12 lg4>
         <material-chart-card
@@ -36,20 +61,16 @@
           type="Bar"
         >
           <h4 class="title font-weight-light">
-            Emails telling you your code sucks
+            UBC Farm crop harvests
           </h4>
-          <p class="category d-inline-flex font-weight-light">
-            Last Campaign Performance
-          </p>
+          <p class="category d-inline-flex font-weight-light"></p>
 
-          <template slot="actions">
-            <v-icon class="mr-2" small>
-              mdi-clock-outline
+          <p class="category d-inline-flex font-weight-light">
+            <v-icon color="orange" small>
+              mdi-carrot
             </v-icon>
-            <span class="caption blue-grey--text font-weight-light"
-              >updated 10 minutes ago</span
-            >
-          </template>
+            Carrots, Cabbages, Eggplants, and more!
+          </p>
         </material-chart-card>
       </v-flex>
       <v-flex md12 sm12 lg4>
@@ -59,219 +80,40 @@
           color="indigo"
           type="Line"
         >
-          <h3 class="title font-weight-light">Completed Tasks</h3>
+          <h3 class="title font-weight-light">Waste produced</h3>
           <p class="category d-inline-flex font-weight-light">
-            Last Last Campaign Performance
-          </p>
-
-          <template slot="actions">
-            <v-icon class="mr-2" small>
-              mdi-clock-outline
+            <v-icon color="red" small>
+              mdi-arrow-down
             </v-icon>
-            <span class="caption grey--text font-weight-light"
-              >campaign sent 26 minutes ago</span
-            >
-          </template>
+            <span class="red--text">33%</span>&nbsp; decrease in this week's
+            garbage
+          </p>
         </material-chart-card>
       </v-flex>
-      <v-flex sm6 xs12 md6 lg3>
+      <v-flex lg8>
+        <material-card
+          color="info"
+          title="25 New Trees Planted!"
+          text="Loving the new greenery!"
+        >
+          With the addition of the 25 new trees just this past week, UBC has
+          managed to plant over 5000 trees this whole year! The Pacific Spirit
+          Park has redeveloped and grow into its luscious green space once
+          again! We all remember that deadly fire at the end of 2020! Even the
+          firefighters' water pumps and hoses froze up with the record-breaking
+          frigid temperatures. Oh wow, 2020, such a long time ago... what an
+          unforgettable year indeed.
+        </material-card>
+      </v-flex>
+      <v-flex lg4>
         <material-stats-card
           color="green"
           icon="mdi-store"
-          title="Revenue"
-          value="$34,245"
-          sub-icon="mdi-calendar"
-          sub-text="Last 24 Hours"
-        />
-      </v-flex>
-      <v-flex sm6 xs12 md6 lg3>
-        <material-stats-card
-          color="orange"
-          icon="mdi-content-copy"
-          title="Used Space"
-          value="49/50"
-          small-value="GB"
+          title="Canned goods donated"
+          value="12,475"
           sub-icon="mdi-alert"
-          sub-icon-color="error"
-          sub-text="Get More Space..."
-          sub-text-color="text-primary"
+          sub-text="Let's help out the less fortunate!"
         />
-      </v-flex>
-      <v-flex sm6 xs12 md6 lg3>
-        <material-stats-card
-          color="red"
-          icon="mdi-information-outline"
-          title="Fixed Issues"
-          value="75"
-          sub-icon="mdi-tag"
-          sub-text="Tracked from Github"
-        />
-      </v-flex>
-      <v-flex sm6 xs12 md6 lg3>
-        <material-stats-card
-          color="info"
-          icon="mdi-twitter"
-          title="Followers"
-          value="+245"
-          sub-icon="mdi-update"
-          sub-text="Just Updated"
-        />
-      </v-flex>
-      <v-flex md12 lg6>
-        <material-card
-          color="orange"
-          title="Employee Stats"
-          text="New employees on 15th September, 2016"
-        >
-          <v-data-table :headers="headers" :items="items" hide-actions>
-            <template slot="headerCell" slot-scope="{ header }">
-              <span
-                class="font-weight-light text-warning text--darken-3"
-                v-text="header.text"
-              />
-            </template>
-            <template slot="items" slot-scope="{ index, item }">
-              <td>{{ index + 1 }}</td>
-              <td>{{ item.name }}</td>
-              <td class="text-xs-right">{{ item.salary }}</td>
-              <td class="text-xs-right">{{ item.country }}</td>
-              <td class="text-xs-right">{{ item.city }}</td>
-            </template>
-          </v-data-table>
-        </material-card>
-      </v-flex>
-      <v-flex md12 lg6>
-        <material-card class="card-tabs" color="general">
-          <v-flex slot="header">
-            <v-tabs v-model="tabs" color="transparent" slider-color="white">
-              <span
-                class="subheading font-weight-light mr-3"
-                style="align-self: center"
-                >Tasks:</span
-              >
-              <v-tab class="mr-3">
-                <v-icon class="mr-2">mdi-bug</v-icon>
-                Bugs
-              </v-tab>
-              <v-tab class="mr-3">
-                <v-icon class="mr-2">mdi-code-tags</v-icon>
-                Website
-              </v-tab>
-              <v-tab>
-                <v-icon class="mr-2">mdi-cloud</v-icon>
-                Server
-              </v-tab>
-            </v-tabs>
-          </v-flex>
-
-          <v-tabs-items v-model="tabs">
-            <v-tab-item v-for="n in 3" :key="n">
-              <v-list three-line>
-                <v-list-tile @click="complete(0)">
-                  <v-list-tile-action>
-                    <v-checkbox :value="list[0]" color="green" />
-                  </v-list-tile-action>
-                  <v-list-tile-title>
-                    Sign contract for "What are conference organized afraid of?"
-                  </v-list-tile-title>
-                  <div class="d-flex">
-                    <v-tooltip top content-class="top">
-                      <v-btn
-                        slot="activator"
-                        class="v-btn--simple"
-                        color="success"
-                        icon
-                      >
-                        <v-icon color="primary">mdi-pencil</v-icon>
-                      </v-btn>
-                      <span>Edit</span>
-                    </v-tooltip>
-                    <v-tooltip top content-class="top">
-                      <v-btn
-                        slot="activator"
-                        class="v-btn--simple"
-                        color="danger"
-                        icon
-                      >
-                        <v-icon color="error">mdi-close</v-icon>
-                      </v-btn>
-                      <span>Close</span>
-                    </v-tooltip>
-                  </div>
-                </v-list-tile>
-                <v-divider />
-                <v-list-tile @click="complete(1)">
-                  <v-list-tile-action>
-                    <v-checkbox :value="list[1]" color="success" />
-                  </v-list-tile-action>
-                  <v-list-tile-title>
-                    Lines From Great Russian Literature? Or E-mails From My
-                    Boss?
-                  </v-list-tile-title>
-                  <div class="d-flex">
-                    <v-tooltip top content-class="top">
-                      <v-btn
-                        slot="activator"
-                        class="v-btn--simple"
-                        color="success"
-                        icon
-                      >
-                        <v-icon color="primary">mdi-pencil</v-icon>
-                      </v-btn>
-                      <span>Edit</span>
-                    </v-tooltip>
-
-                    <v-tooltip top content-class="top">
-                      <v-btn
-                        slot="activator"
-                        class="v-btn--simple"
-                        color="danger"
-                        icon
-                      >
-                        <v-icon color="error">mdi-close</v-icon>
-                      </v-btn>
-                      <span>Close</span>
-                    </v-tooltip>
-                  </div>
-                </v-list-tile>
-                <v-divider />
-                <v-list-tile @click="complete(2)">
-                  <v-list-tile-action>
-                    <v-checkbox :value="list[2]" color="success" />
-                  </v-list-tile-action>
-                  <v-list-tile-title>
-                    Flooded: One year later, assessing what was lost and what
-                    was found when a ravaging rain swept through metro Detroit
-                  </v-list-tile-title>
-                  <div class="d-flex">
-                    <v-tooltip top content-class="top">
-                      <v-btn
-                        slot="activator"
-                        class="v-btn--simple"
-                        color="success"
-                        icon
-                      >
-                        <v-icon color="primary">mdi-pencil</v-icon>
-                      </v-btn>
-                      <span>Edit</span>
-                    </v-tooltip>
-                    <v-tooltip top content-class="top">
-                      <v-btn
-                        slot="activator"
-                        class="v-btn--simple"
-                        color="danger"
-                        icon
-                      >
-                        <v-icon color="error">mdi-close</v-icon>
-                      </v-btn>
-                      <span>Close</span>
-                    </v-tooltip>
-                  </div>
-                </v-list-tile>
-              </v-list>
-            </v-tab-item>
-          </v-tabs-items>
-        </material-card>
       </v-flex>
     </v-layout>
   </v-container>

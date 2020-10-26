@@ -14,10 +14,10 @@
       <v-layout class="fill-height" tag="v-list" column>
         <v-list-tile avatar>
           <v-list-tile-avatar color="grey">
-            <v-img :src="logo" height="64" contain />
+            <v-img :src="logo" contain />
           </v-list-tile-avatar>
           <v-list-tile-title class="title">
-            Vuetify Admin Dash
+            THE UBYSSEY
           </v-list-tile-title>
         </v-list-tile>
         <v-divider />
@@ -68,11 +68,6 @@ export default {
         to: '/dashboard/environment',
         icon: 'mdi-pine-tree',
         text: 'Environment',
-      },
-      {
-        to: '/dashboard/people',
-        icon: 'mdi-account-group',
-        text: 'People',
       },
       {
         to: '/dashboard/maps',
