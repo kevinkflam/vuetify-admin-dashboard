@@ -15,7 +15,7 @@ export default {
   name: 'DashboardView',
   metaInfo() {
     return {
-      title: 'Vuetify Admin Dashboard by ClintOxx',
+      title: 'UBC 2030 Sustainability contest by Kevin Lam',
     };
   },
 };
