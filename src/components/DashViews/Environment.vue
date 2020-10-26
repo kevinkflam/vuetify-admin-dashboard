@@ -7,16 +7,18 @@
           title="25 New Trees Planted!"
           text="Loving the new greenery!"
         >
-          With the addition of the 25 new trees just this past week, UBC has
-          managed to plant over 5000 trees this whole year! The Pacific Spirit
-          Park has redeveloped and grow into its luscious green space once
-          again! We all remember that deadly fire at the end of 2020! Even the
-          firefighters' water pumps and hoses froze up with the record-breaking
-          frigid temperatures. Oh wow, 2020, such a long time ago... what an
-          unforgettable year indeed. <br />
+          With the addition of the 25 new trees planted just this past week, UBC
+          has managed to introduce over 5000 trees this whole year! The Pacific
+          Spirit Park has redeveloped and grown back into its luscious green
+          space once again! We all remember that horrendous fire at the end of
+          2020, which took out a lot of greenspace. Even the firefighters' water
+          pumps and hoses froze up with the record-breaking frigid temperatures.
+          Oh wow, 2020, such a long time ago... what an unforgettable year
+          indeed... <br />
+          <br />
           <img
             width="1000"
-            height="350"
+            height="300"
             src="https://www.motherjones.com/wp-content/uploads/2019/07/Trees-7-4-19.jpg?w=1200&h=630&crop=1"
           />
         </material-card>
@@ -25,22 +27,27 @@
           title="Wind turbines go woosh woosh woosh"
           text="Let's fly some kites!"
         >
-          The newly installed at the edge of Wreck Beach have certainly made a
-          positive impact on UBC's plan to become the most green university in
-          Canada. And yes although we do pride ourselves in the Magic Forest
-          near Totem, we aren't talking about <i>that</i> type of green! UBC has
-          cut down on using fossil fuels by a whopping 50% and the new wind
-          turbines have supplied 34% of all of UBC's energy, isn't that
+          The newly installed wind turbines at the edge of Wreck Beach have
+          certainly made a positive impact on UBC's plan to become the most
+          green university in Canada. And yes, although we do pride ourselves in
+          the Magic Forest near Totem, we aren't talking about <i>that</i> type
+          of green! UBC has cut down on using fossil fuels by a whopping 50% and
+          the new wind turbines have supplied 24% of UBC's energy, isn't that
           awesome?! <br />
-          Hidden away near the cliffs of Wreck Beach, sunbathing students can
-          listen to the calm whooshing sound the turbines make, along with the
-          calm splashing waves, to enjoy a peaceful Sunday afternoon relaxing
-          and leaving their worries behind. Along with the new Musqueam totem
-          poles along the infamous stairs leading to the beach, the UBC
-          community has strengthened their relationship with the First Nations
-          people, ensuring that the First Nations needs are put first and
-          foremost as the UBC administration understands that we are on the
-          traditional, ancestral, and unceded territory of the Musqueam people.
+          <br />
+          Hidden away near the cliffs of Wreck Beach, sunbathing (maybe not now,
+          but in the summer!) students can listen to the calm whooshing sound of
+          the turbines, along with the calm splashing waves, to enjoy a peaceful
+          Sunday afternoon relaxing and leaving their worries behind.
+          <br />
+          <br />
+          Along with the new Musqueam totem poles around the infamous stairs
+          leading to the beach, the UBC community has strengthened their
+          relationship with the First Nations people, ensuring that the First
+          Nations needs are put first and foremost as the UBC administration
+          understands that we are on the traditional, ancestral, and unceded
+          territory of the Musqueam people.
+          <br />
           <br />
           <v-flex class="d-flex justify-space-between">
             <img
@@ -67,9 +74,10 @@
           excess energy (hopefully!) will be delivered to the West Parkade
           parking lot to charge the electric vehicles. Speaking of, UBC has had
           to install 50 more electric vehicle charging stations, due to the high
-          rise of EVs in the city! And to thnk just 10 years ago when we saw the
+          rise of EVs on campus! And to thnk just 10 years ago when we saw the
           new Cybertruck and laughed, but now you might even see a couple on
           each floor!
+          <br />
           <br />
           <img
             width="500"

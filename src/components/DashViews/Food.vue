@@ -22,19 +22,20 @@
         <material-card
           color="info"
           title="The new insect menu is booming!"
-          text="Crickets are the best protein"
+          text="Crickets are the new best protein"
         >
           5 years ago, when insects such as crickets, grasshoppers, and other
-          grubs were added to some shops' menus in the Nest, most students were
+          grubs were added to some shop menus in the Nest, most students were
           disgusted and laughed at how silly this change was. However, once the
           Blue Chip cookies started incorporating Cricket Cookies, sales started
           rising and more students began trying the new source of protein.
           <br />
+          <br />
           This week, the UBC chapter of Rain or Shine incorporated their new
-          Cricket and Cream flavour, sales have boosted up by 23% this week
-          compared to last week! Things are certainly looking up to using new
-          sources of proteins as a community and relying less on the
-          high-impacts of other protein sources such as cows and pork.
+          Cricket and Cream flavour, and sales have boosted up by 23% compared
+          to last week! Things are certainly looking up to the new sources of
+          protein as a community and relying less on the detrimental impacts of
+          mass-producing protein sources such as beef and pork.
         </material-card>
       </v-flex>
       <v-flex lg8>
@@ -43,12 +44,12 @@
           title="UBC Farm yearly summary"
           text="Yummy yummy in my tummy"
         >
-          As a summary to this year's crops yield, the UBC farm has been able to
+          As a summary to this year's crop yield, the UBC farm has been able to
           obtain a record amount, able to independently supply first-year meals
           during the whole summer! This was the first time this has ever
           happened, and it may be due to the recent expansion of the UBC farm,
           as well as the increase in student involvement in caretaking. Students
-          have cared for the new farm and their efforts have shone through the
+          have cared for the new farm and their efforts have shone, through the
           quantity and quality of the food produced.
         </material-card>
       </v-flex>
@@ -80,7 +81,7 @@
           color="indigo"
           type="Line"
         >
-          <h3 class="title font-weight-light">Waste produced</h3>
+          <h3 class="title font-weight-light">Food waste produced</h3>
           <p class="category d-inline-flex font-weight-light">
             <v-icon color="red" small>
               mdi-arrow-down
@@ -93,14 +94,15 @@
       <v-flex lg8>
         <material-card
           color="info"
-          title="25 New Trees Planted!"
-          text="Loving the new greenery!"
+          title="Waste begone!"
+          text="Our efforts have not gone to waste"
         >
           Students and Faculty members certainly have taken a more conscious
-          approach to their waste, with a record-breaking low of only 2000lbs of
-          garbage for the whole UBC, and 3000lbs of food waste, much which has
-          gone to compost or turned to energy through the newly constructed
-          biofuel production facility on campus.
+          approach to their waste management, with a record-breaking low of only
+          2000lbs of garbage for all of UBC, and 3000lbs of food waste. Much of
+          the food waste has gone to compost or turned to energy through the
+          newly constructed biofuel production facility on campus, adding to the
+          sustainable energy cycle.
         </material-card>
       </v-flex>
       <v-flex lg4>
@@ -109,7 +111,6 @@
           icon="mdi-store"
           title="Canned goods donated"
           value="12,475"
-          sub-icon="mdi-alert"
           sub-text="Let's help out the less fortunate!"
         />
       </v-flex>
@@ -125,14 +126,14 @@ export default {
       dailySalesChart: {
         data: {
           labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
-          series: [[12, 17, 7, 17, 23, 18, 38]],
+          series: [[24, 54, 47, 36, 69, 65, 83]],
         },
         options: {
           lineSmooth: this.$chartist.Interpolation.cardinal({
             tension: 0,
           }),
           low: 0,
-          high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+          high: 90, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
           chartPadding: {
             top: 0,
             right: 0,
@@ -143,15 +144,43 @@ export default {
       },
       dataCompletedTasksChart: {
         data: {
-          labels: ['12am', '3pm', '6pm', '9pm', '12pm', '3am', '6am', '9am'],
-          series: [[230, 750, 450, 300, 280, 240, 200, 190]],
+          labels: [
+            'Ja',
+            'Fe',
+            'Ma',
+            'Ap',
+            'Mai',
+            'Ju',
+            'Jul',
+            'Au',
+            'Se',
+            'Oc',
+            'No',
+            'De',
+          ],
+          series: [
+            [
+              4678,
+              4876,
+              4750,
+              4500,
+              4600,
+              4300,
+              4100,
+              3767,
+              3145,
+              3467,
+              3290,
+              3010,
+            ],
+          ],
         },
         options: {
           lineSmooth: this.$chartist.Interpolation.cardinal({
             tension: 0,
           }),
-          low: 0,
-          high: 1000, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+          low: 2500,
+          high: 5000, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
           chartPadding: {
             top: 0,
             right: 0,
@@ -177,7 +206,7 @@ export default {
             'De',
           ],
           series: [
-            [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895],
+            [400, 443, 500, 760, 809, 987, 1234, 1123, 900, 654, 532, 432],
           ],
         },
         options: {
@@ -185,7 +214,7 @@ export default {
             showGrid: false,
           },
           low: 0,
-          high: 1000,
+          high: 1350,
           chartPadding: {
             top: 0,
             right: 5,
@@ -206,74 +235,6 @@ export default {
             },
           ],
         ],
-      },
-      headers: [
-        {
-          sortable: false,
-          text: 'ID',
-          value: 'id',
-        },
-        {
-          sortable: false,
-          text: 'Name',
-          value: 'name',
-        },
-        {
-          sortable: false,
-          text: 'Salary',
-          value: 'salary',
-          align: 'right',
-        },
-        {
-          sortable: false,
-          text: 'Country',
-          value: 'country',
-          align: 'right',
-        },
-        {
-          sortable: false,
-          text: 'City',
-          value: 'city',
-          align: 'right',
-        },
-      ],
-      items: [
-        {
-          name: 'Dakota Rice',
-          country: 'Niger',
-          city: 'Oud-Tunrhout',
-          salary: '$35,738',
-        },
-        {
-          name: 'Minerva Hooper',
-          country: 'Curaçao',
-          city: 'Sinaai-Waas',
-          salary: '$23,738',
-        },
-        {
-          name: 'Sage Rodriguez',
-          country: 'Netherlands',
-          city: 'Overland Park',
-          salary: '$56,142',
-        },
-        {
-          name: 'Philip Chanley',
-          country: 'Korea, South',
-          city: 'Gloucester',
-          salary: '$38,735',
-        },
-        {
-          name: 'Doris Greene',
-          country: 'Malawi',
-          city: 'Feldkirchen in Kārnten',
-          salary: '$63,542',
-        },
-      ],
-      tabs: 0,
-      list: {
-        0: false,
-        1: false,
-        2: false,
       },
     };
   },

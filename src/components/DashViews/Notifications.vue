@@ -6,7 +6,7 @@
           <div slot="header">
             <div class="title font-weight-light mb-2">What's new at UBC</div>
             <div class="category">
-              Everything you need to know all in one palce
+              Everything you need to know all in one place
             </div>
           </div>
           <v-card-text>

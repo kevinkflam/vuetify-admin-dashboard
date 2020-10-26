@@ -10,7 +10,7 @@
     <v-flex lg7>
       <material-card color="info" title="Contact Us">
         <a href="https://www.ubyssey.ca/"> The Ubyssey </a> <br />
-        The University of British <br />
+        The University of British Columbia <br />
         6133 University Blvd <br />
         Vancouver, BC V6T 1Z1 <br />
       </material-card>
