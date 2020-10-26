@@ -10,33 +10,18 @@
     width="260"
     absolute
   >
-    <v-img
-      :src="image"
-      height="100%"
-    >
-      <v-layout
-        class="fill-height"
-        tag="v-list"
-        column
-      >
+    <v-img :src="image" height="100%">
+      <v-layout class="fill-height" tag="v-list" column>
         <v-list-tile avatar>
-          <v-list-tile-avatar
-            color="grey"
-          >
-            <v-img
-              :src="logo"
-              height="64"
-              contain
-            />
+          <v-list-tile-avatar color="grey">
+            <v-img :src="logo" height="64" contain />
           </v-list-tile-avatar>
           <v-list-tile-title class="title">
             Vuetify Admin Dash
           </v-list-tile-title>
         </v-list-tile>
-        <v-divider/>
-        <v-list-tile
-          v-if="responsive"
-        >
+        <v-divider />
+        <v-list-tile v-if="responsive">
           <v-text-field
             class="purple-input search-input"
             label="Search..."
@@ -54,9 +39,7 @@
           <v-list-tile-action>
             <v-icon>{{ link.icon }}</v-icon>
           </v-list-tile-action>
-          <v-list-tile-title
-            v-text="link.text"
-          />
+          <v-list-tile-title v-text="link.text" />
         </v-list-tile>
       </v-layout>
     </v-img>
@@ -65,112 +48,109 @@
 
 <script>
 // Utilities
-import {
-  mapMutations,
-  mapState
-} from 'vuex'
+import { mapMutations, mapState } from 'vuex';
 
 export default {
   data: () => ({
     logo: require('@/assets/img/redditicon.png'),
     links: [
       {
-        to: '/',
+        to: '/dashboard',
         icon: 'mdi-view-dashboard',
-        text: 'Dashboard'
+        text: 'Dashboard',
       },
       {
         to: '/dashboard/user-profile',
         icon: 'mdi-account',
-        text: 'User Profile'
+        text: 'User Profile',
       },
       {
         to: '/dashboard/table-list',
         icon: 'mdi-clipboard-outline',
-        text: 'Table List'
+        text: 'Table List',
       },
       {
         to: '/dashboard/user-tables',
         icon: 'mdi-table-edit',
-        text: 'Users Table'
+        text: 'Users Table',
       },
       {
         to: '/dashboard/typography',
         icon: 'mdi-format-font',
-        text: 'Typography'
+        text: 'Typography',
       },
       {
         to: '/dashboard/icons',
         icon: 'mdi-chart-bubble',
-        text: 'Icons'
+        text: 'Icons',
       },
       {
         to: '/dashboard/maps',
         icon: 'mdi-map-marker',
-        text: 'Maps'
+        text: 'Maps',
       },
       {
         to: '/dashboard/notifications',
         icon: 'mdi-bell',
-        text: 'Notifications'
-      }
+        text: 'Notifications',
+      },
     ],
-    responsive: false
+    responsive: false,
   }),
   computed: {
     ...mapState('app', ['image', 'color']),
     inputValue: {
-      get () {
-        return this.$store.state.app.drawer
+      get() {
+        return this.$store.state.app.drawer;
       },
-      set (val) {
-        this.setDrawer(val)
-      }
+      set(val) {
+        this.setDrawer(val);
+      },
     },
-    items () {
-      return this.$t('Layout.View.items')
-    }
+    items() {
+      return this.$t('Layout.View.items');
+    },
   },
-  mounted () {
-    this.onResponsiveInverted()
-    window.addEventListener('resize', this.onResponsiveInverted)
+  mounted() {
+    this.onResponsiveInverted();
+    window.addEventListener('resize', this.onResponsiveInverted);
   },
-  beforeDestroy () {
-    window.removeEventListener('resize', this.onResponsiveInverted)
+  beforeDestroy() {
+    window.removeEventListener('resize', this.onResponsiveInverted);
   },
   methods: {
     ...mapMutations('app', ['setDrawer', 'toggleDrawer']),
-    onResponsiveInverted () {
+    onResponsiveInverted() {
       if (window.innerWidth < 991) {
-        this.responsive = true
+        this.responsive = true;
       } else {
-        this.responsive = false
+        this.responsive = false;
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style lang="scss">
-  #app-drawer {
-    .v-list__tile {
-      border-radius: 4px;
+#app-drawer {
+  .v-list__tile {
+    border-radius: 4px;
 
-      &--buy {
-        margin-top: auto;
-        margin-bottom: 17px;
-      }
-    }
-
-    .v-image__image--contain {
-      top: 9px;
-      height: 60%;
-    }
-
-    .search-input {
-      margin-bottom: 30px !important;
-      padding-left: 15px;
-      padding-right: 15px;
+    &--buy {
+      margin-top: auto;
+      margin-bottom: 17px;
     }
   }
+
+  .v-image__image--contain {
+    top: 9px;
+    height: 60%;
+  }
+
+  .search-input {
+    margin-bottom: 30px !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 </style>

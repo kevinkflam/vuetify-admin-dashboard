@@ -3,120 +3,114 @@
  * for more information on routes, see the
  * official documentation https://router.vuejs.org/en/
  */
-import store from '../store'
+import store from '../store';
 export default [
   {
     path: '*',
     meta: {
       name: '',
-      requiresAuth: true
+      requiresAuth: true,
     },
     redirect: {
-      path: '/dashboard'
-    }
+      path: '/dashboard',
+    },
   },
   // This  allows you to have pages apart of the app but no rendered inside the dash
   {
     path: '/',
     meta: {
       name: '',
-      requiresAuth: false
+      requiresAuth: false,
     },
     component: () =>
       import(/* webpackChunkName: "routes" */ `@/views/LoginHome.vue`),
     // redirect if already signed in
     beforeEnter: (to, from, next) => {
       if (store.getters.authorized) {
-        next('/dashboard')
+        next('/dashboard');
       } else {
-        next()
+        next();
       }
     },
-    children: [
-      {
-        path: '',
-        component: () => import(`@/components/LoginForm.vue`)
-      }
-    ]
   },
   // add any extra routes that you want rendered in the dashboard as a child below. Change toolbar names here
   {
     path: '/dashboard',
     meta: {
       name: 'Dashboard View',
-      requiresAuth: true
+      requiresAuth: true,
     },
     component: () => import(`@/views/DashboardView.vue`),
     children: [
       {
         path: '',
         name: 'Dashboard',
-        component: () => import(`@/components/DashViews/Dashboard.vue`)
+        component: () => import(`@/components/DashViews/Dashboard.vue`),
       },
       {
         path: 'user-profile',
         meta: {
           name: 'User Profile',
-          requiresAuth: true
+          requiresAuth: true,
         },
-        component: () => import(`@/components/DashViews/UserProfile.vue`)
+        component: () => import(`@/components/DashViews/UserProfile.vue`),
       },
       {
         path: 'table-list',
         meta: {
           name: 'Table List',
-          requiresAuth: true
+          requiresAuth: true,
         },
-        component: () => import(`@/components/DashViews/SimpleTables.vue`)
+        component: () => import(`@/components/DashViews/SimpleTables.vue`),
       },
       {
         path: 'user-tables',
         meta: {
           name: 'User Table',
-          requiresAuth: true
+          requiresAuth: true,
         },
-        component: () => import(`@/components/DashViews/UsersTable.vue`)
+        component: () => import(`@/components/DashViews/UsersTable.vue`),
       },
       {
         path: 'tablestest',
         meta: {
           name: 'Complex Tables test',
-          requiresAuth: true
+          requiresAuth: true,
         },
-        component: () => import(`@/components/DashViews/TableList.vue`)
+        component: () => import(`@/components/DashViews/TableList.vue`),
       },
       {
         path: 'typography',
         meta: {
           name: 'Typography',
-          requiresAuth: true
+          requiresAuth: true,
         },
-        component: () => import(`@/components/DashViews/Typography.vue`)
+        component: () => import(`@/components/DashViews/Typography.vue`),
       },
       {
         path: 'icons',
         meta: {
           name: 'Icons',
-          requiresAuth: true
+          requiresAuth: true,
         },
-        component: () => import(`@/components/DashViews/Icons.vue`)
+        component: () => import(`@/components/DashViews/Icons.vue`),
       },
       {
         path: 'maps',
         meta: {
           name: 'Maps',
-          requiresAuth: true
+          requiresAuth: true,
         },
-        component: () => import(`@/components/DashViews/Maps.vue`)
+        component: () => import(`@/components/DashViews/Maps.vue`),
       },
       {
         path: 'notifications',
         meta: {
           name: 'Notifications',
-          requiresAuth: true
+          requiresAuth: true,
         },
-        component: () => import(`@/components/DashViews/Notifications.vue`)
-      }
-    ]
-  }
-]
+        component: () => import(`@/components/DashViews/Notifications.vue`),
+      },
+    ],
+  },
+];
